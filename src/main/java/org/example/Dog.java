@@ -14,6 +14,9 @@ public class Dog {
         this.weight = weight;
         this.color = color;
     }
+    public Dog(String name) {
+        this.name = name.equals("") ? "...":name;
+    }
     public void walk(String destination){
         System.out.println("Pies poszedł do " + destination);
     }
@@ -32,5 +35,9 @@ public class Dog {
 
     public void setAge(int age) {
         this.age = age;
+    }
+    @Override
+    public String toString(){
+        return "Imię: " + this.name;
     }
 }

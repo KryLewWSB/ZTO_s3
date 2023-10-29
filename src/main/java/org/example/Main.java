@@ -1,12 +1,17 @@
 package org.example;
+
 public class Main {
     public static void main(String[] args) {
-        Dog dog1 = new Dog("Azor", 5, "on", 12, "Czarny");
-        Dog dog2 = new Dog("Fafik", 7, "on", 9, "Czarny");
+        Pracownik pracownik = new Pracownik("Adam", "Kowalski", 5000);
+        Kierownik kierownik = new Kierownik("Adela", "Nowakowska", 8000, 2000);
 
-        dog1.eat("Kurczak");
-        dog1.name = "Stefan";
-        dog1.setAge(4);//użycie settera i zmienienie 5 na 4
-        System.out.println(dog1.name + " wiek: " + dog1.getAge() + " lat.");
+        System.out.println("Imię pracownik: " + pracownik.imie +
+                            "Nazwisko pacownik: " + pracownik.nazwisko +
+                            "Wypłata pracownik: " + pracownik.wyplata);
+        System.out.println("Imię kierownik: " + kierownik.imie +
+                            "Nazwisko kierownik: " + kierownik.nazwisko +
+                            "Wypłata kierownik: " + kierownik.wyplata +
+                            "Premia kierownicza: "  + kierownik.premiaKierownicza);
+
     }
 }
