@@ -5,5 +5,6 @@ public class Main {
         Dog dog2 = new Dog("Fafik", 7, "on", 9, "Czarny");
 
         dog1.eat("Kurczak");
+        System.out.println(dog1.name + " wiek: " + dog1.getAge() + " lat.");
     }
 }

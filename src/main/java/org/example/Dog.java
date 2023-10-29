@@ -2,10 +2,11 @@ package org.example;
 
 public class Dog {
     public String name;
-    public int age;
-    public String gender;
-    public int weight;
-    public String color;
+    private int age;
+    private String gender;
+    private int weight;
+
+    private String color;
     public Dog(String name, int age, String gender, int weight, String color) {
         this.name = name;
         this.age = age;
@@ -24,5 +25,8 @@ public class Dog {
     }
     public void sleep(int hours){
         System.out.println("Pies spał " + hours);
+    }
+    public int getAge() {
+        return age;
     }
 }
